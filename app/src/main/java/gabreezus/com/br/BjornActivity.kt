@@ -4,100 +4,102 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_bjorn.*
 
-class MainActivity : AppCompatActivity() {
+class BjornActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_bjorn)
 
-        Log.d("Aviso!", "Criando... Main Activity")
+        Log.d("Aviso!", "Criando... BjornActivity")
 
-        imgBtRagnar.setOnClickListener {
+        txtAviso.text = if (savedInstanceState == null) {
+            intent.extras.getString("frase")
+        } else {
+            savedInstanceState.getString("frase")
+        }
+
+        imgLogo.setOnClickListener {
             redireciona(1)
         }
 
-        imgBtLagertha.setOnClickListener {
+        img001.setOnClickListener {
             redireciona(2)
         }
 
-        imgBtRollo.setOnClickListener {
+        img008.setOnClickListener {
             redireciona(3)
         }
 
-        imgBtFloki.setOnClickListener {
+        img003.setOnClickListener {
             redireciona(4)
         }
 
-        imgBtAthelstan.setOnClickListener {
+        img009.setOnClickListener {
             redireciona(5)
         }
-
-        imgBtBjorn.setOnClickListener {
-            redireciona(6)
-        }
-
     }
 
-    private fun redireciona(op : Int) {
+    private fun redireciona(op: Int) {
 
         val bundle = Bundle()
-        val frase = ""
+        val frase = "Você chegou neste personagem através do personagem Bjorn Ironside"
         with(bundle) {
             putString("frase", frase)
         }
 
         if(op == 1) {
-            val intent = Intent(this, RagnarActivity::class.java)
-            intent.putExtras(bundle)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         } else if(op == 2) {
             val intent = Intent(this, LagerthaActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
         } else if(op == 3) {
-            val intent = Intent(this, RolloActivity::class.java)
+            val intent = Intent(this, RagnarActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
         } else if(op == 4) {
             val intent = Intent(this, FlokiActivity::class.java)
-            intent.putExtras(bundle)
             intent.putExtras(bundle)
             startActivity(intent)
         } else if(op == 5) {
             val intent = Intent(this, AthelstanActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
-        } else if(op == 6) {
-            val intent = Intent(this, BjornActivity::class.java)
-            intent.putExtras(bundle)
-            startActivity(intent)
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        with(outState) {
+            putString("frase", txtAviso.text.toString())
         }
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d("Aviso!", "Iniciando... Main Activity")
+        Log.d("Aviso!", "Iniciando... BjornActivity")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("Aviso!", "Resumindo... Main Activity")
+        Log.d("Aviso!", "Resumindo... BjornActivity")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.d("Aviso!", "Reiniciando... Main Activity")
+        Log.d("Aviso!", "Reiniciando... BjornActivity")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("Aviso!", "Parando... Main Activity")
+        Log.d("Aviso!", "Parando... BjornActivity")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("Aviso!", "Destruindo... Main Activity")
+        Log.d("Aviso!", "Destruindo... BjornActivity")
     }
 }

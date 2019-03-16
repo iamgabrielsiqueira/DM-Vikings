@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LagerthaActivity" android:padding="10dp">
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/scrView001"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp">
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@mipmap/vikingslogo"
+                    android:id="@+id/imgLogo" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp" tools:ignore="NotSibling"/>
+            <TextView
+                    android:text="Lagertha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtViewPersonagemNome" android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="@+id/imgLogo"
+                    app:layout_constraintEnd_toEndOf="@+id/imgLogo" android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imgLogo" android:textStyle="bold"/>
+            <ImageView
+                    android:layout_width="275dp"
+                    android:layout_height="192dp" app:srcCompat="@mipmap/lagerthaprofile"
+                    android:id="@+id/imgProfilePersonagem" app:layout_constraintStart_toStartOf="@+id/imgLogo"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/txtViewPersonagemNome"
+                    app:layout_constraintEnd_toEndOf="@+id/imgLogo"/>
+            <TextView
+                    android:text="Lagertha foi, de acordo com as lendas locais, uma skjaldmö viquingue que viveu no território da atual Noruega, esposa do célebre guerreiro viquingue Ragnar Calças Peludas. Sua história, tal como registrada pelo cronista Saxão Gramático, no livro Feitos dos Danos, século XII, pode refletir diversos contos sobre Þorgerðr Hölgabrúðr, uma divindade nórdica."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtBioPersonagem" app:layout_constraintEnd_toEndOf="@+id/imgProfilePersonagem"
+                    app:layout_constraintStart_toStartOf="@+id/imgProfilePersonagem"
+                    app:layout_constraintTop_toBottomOf="@+id/imgProfilePersonagem"
+                    android:textSize="14sp" android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+                    android:textStyle="italic"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    android:layout_marginEnd="32dp" android:layout_marginRight="32dp" android:gravity="center"
+                    android:layout_marginTop="8dp"/>
+            <TextView
+                    android:text="Amigos Favoritos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAmigos" app:layout_constraintStart_toStartOf="@+id/txtBioPersonagem"
+                    app:layout_constraintEnd_toEndOf="@+id/txtBioPersonagem" android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBioPersonagem"/>
+            <ImageButton
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" app:srcCompat="@mipmap/bjorn"
+                    android:id="@+id/img004"
+                    app:layout_constraintStart_toStartOf="@+id/imgProfilePersonagem"
+                    android:adjustViewBounds="false"
+                    android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAmigos" android:layout_marginTop="8dp"/>
+            <ImageButton
+                    android:layout_width="78dp"
+                    android:layout_height="78dp" app:srcCompat="@mipmap/ragnar"
+                    android:id="@+id/img005"
+                    app:layout_constraintEnd_toEndOf="@+id/imgProfilePersonagem"
+                    android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAmigos"
+                    android:layout_marginTop="8dp"/>
+            <TextView
+                    android:text="Bjorn Ironside"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtBjorn"
+                    app:layout_constraintStart_toStartOf="@+id/img004"
+                    app:layout_constraintEnd_toEndOf="@+id/img004" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/img004"/>
+            <TextView
+                    android:text="Ragnar Lothbrok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtRagnar" app:layout_constraintStart_toStartOf="@+id/img005"
+                    app:layout_constraintEnd_toEndOf="@+id/img005" app:layout_constraintTop_toBottomOf="@+id/img005"
+                    android:layout_marginTop="8dp"/>
+            <TextView
+                    android:text="Você chegou neste personagem através do personagem [NOME]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/txtAviso" app:layout_constraintEnd_toEndOf="@+id/txtBioPersonagem"
+                    android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/txtBioPersonagem"
+                    android:textStyle="bold" android:textSize="12sp"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtRagnar" android:layout_marginTop="32dp"/>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

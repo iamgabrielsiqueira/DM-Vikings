@@ -9,6 +9,18 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".BjornActivity">
+        </activity>
+        <activity android:name=".AthelstanActivity">
+        </activity>
+        <activity android:name=".FlokiActivity">
+        </activity>
+        <activity android:name=".RolloActivity">
+        </activity>
+        <activity android:name=".LagerthaActivity">
+        </activity>
+        <activity android:name=".RagnarActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

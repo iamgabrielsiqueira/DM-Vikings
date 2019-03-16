@@ -23,10 +23,11 @@
                     android:text="Floki"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txtViewFloki001" android:textSize="18sp"
-                    app:layout_constraintStart_toStartOf="@+id/imgViewFloki001"
-                    app:layout_constraintEnd_toEndOf="@+id/imgViewFloki001" android:layout_marginTop="12dp"
-                    app:layout_constraintTop_toBottomOf="@+id/imgViewFloki001"/>
+                    android:id="@+id/txtViewPersonagemNome" android:textSize="18sp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="@+id/imgBtFloki"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtFloki"
+                    app:layout_constraintTop_toBottomOf="@+id/imgBtFloki"/>
             <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" app:srcCompat="@mipmap/vikingslogo"
@@ -39,82 +40,82 @@
                     android:text="Rollo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txtViewRollo001" android:textSize="18sp"
-                    app:layout_constraintStart_toStartOf="@+id/imgViewRollo001"
-                    app:layout_constraintEnd_toEndOf="@+id/imgViewRollo001" android:layout_marginTop="12dp"
-                    app:layout_constraintTop_toBottomOf="@+id/imgViewRollo001"/>
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" app:srcCompat="@mipmap/ragnar"
-                    android:id="@+id/imgRagnar" android:layout_marginTop="76dp"
-                    app:layout_constraintTop_toBottomOf="@+id/imgLogo"
-                    app:layout_constraintStart_toStartOf="@+id/imgLogo"
-            />
+                    android:id="@+id/txtViewPersonagemNome" android:textSize="18sp"
+                    android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/imgBtRollo"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtRollo"
+                    app:layout_constraintStart_toStartOf="@+id/imgBtRollo"/>
             <TextView
                     android:text="Ragnar Lothbrok"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/txtViewRagnar" android:textSize="18sp"
-                    android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/imgRagnar"
-                    app:layout_constraintStart_toStartOf="@+id/imgRagnar"
-                    app:layout_constraintEnd_toEndOf="@+id/imgRagnar"/>
+                    app:layout_constraintStart_toStartOf="@+id/imgBtRagnar"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtRagnar" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imgBtRagnar"/>
             <TextView
                     android:text="Athelstan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/txtViewAthelstan" android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="@+id/imgViewAtha"
-                    app:layout_constraintStart_toStartOf="@+id/imgViewAtha" android:layout_marginTop="12dp"
-                    app:layout_constraintTop_toBottomOf="@+id/imgViewAtha" android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" app:srcCompat="@mipmap/bjorn"
-                    android:id="@+id/imgViewBjorn" app:layout_constraintEnd_toEndOf="@+id/imgViewFloki001"
-                    app:layout_constraintStart_toStartOf="@+id/imgViewFloki001" android:layout_marginTop="16dp"
-                    app:layout_constraintTop_toBottomOf="@+id/txtViewFloki001"/>
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" app:srcCompat="@mipmap/lagertha"
-                    android:id="@+id/imgViewLagertha001" app:layout_constraintStart_toEndOf="@+id/imgRagnar"
-                    android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="80dp"
-                    app:layout_constraintTop_toBottomOf="@+id/imgLogo" app:layout_constraintEnd_toEndOf="@+id/imgLogo"
-                    app:layout_constraintHorizontal_bias="1.0"/>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/imgBtAthelstan"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtAthelstan"
+                    app:layout_constraintStart_toStartOf="@+id/imgBtAthelstan" android:layout_marginBottom="8dp"/>
             <TextView
                     android:text="Lagertha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView2" android:textSize="18sp"
-                    android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/imgViewLagertha001"
-                    app:layout_constraintStart_toStartOf="@+id/imgViewLagertha001"
-                    app:layout_constraintEnd_toEndOf="@+id/imgViewLagertha001"/>
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" app:srcCompat="@mipmap/rollo"
-                    android:id="@+id/imgViewRollo001" app:layout_constraintStart_toStartOf="@+id/imgRagnar"
-                    app:layout_constraintEnd_toEndOf="@+id/imgRagnar" android:layout_marginTop="16dp"
-                    app:layout_constraintTop_toBottomOf="@+id/txtViewRagnar"/>
+                    app:layout_constraintStart_toStartOf="@+id/imgBtLagertha"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtLagertha" android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imgBtLagertha"/>
             <TextView
                     android:text="Bjorn Ironside"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/txtViewBjorn" android:textSize="18sp"
-                    app:layout_constraintStart_toStartOf="@+id/imgViewBjorn"
-                    app:layout_constraintEnd_toEndOf="@+id/imgViewBjorn" android:layout_marginTop="12dp"
-                    app:layout_constraintTop_toBottomOf="@+id/imgViewBjorn" android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
-            <ImageView
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imgBtBjorn"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtBjorn"
+                    app:layout_constraintStart_toStartOf="@+id/imgBtBjorn"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@mipmap/ragnar"
+                    android:id="@+id/imgBtRagnar" app:layout_constraintStart_toStartOf="@+id/imgLogo"
+                    android:layout_marginTop="60dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imgLogo"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@mipmap/lagertha"
+                    android:id="@+id/imgBtLagertha" app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+                    android:layout_marginTop="60dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imgLogo"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@mipmap/rollo"
+                    android:id="@+id/imgBtRollo" app:layout_constraintStart_toStartOf="@+id/imgBtRagnar"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtRagnar" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtViewRagnar"/>
+            <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" app:srcCompat="@mipmap/floki"
-                    android:id="@+id/imgViewFloki001" app:layout_constraintStart_toStartOf="@+id/imgViewLagertha001"
-                    app:layout_constraintEnd_toEndOf="@+id/imgViewLagertha001" android:layout_marginTop="16dp"
+                    android:id="@+id/imgBtFloki" app:layout_constraintStart_toStartOf="@+id/imgBtLagertha"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtLagertha" android:layout_marginTop="16dp"
                     app:layout_constraintTop_toBottomOf="@+id/textView2"/>
-            <ImageView
+            <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" app:srcCompat="@mipmap/athelstan"
-                    android:id="@+id/imgViewAtha" app:layout_constraintStart_toStartOf="@+id/imgViewRollo001"
-                    app:layout_constraintEnd_toEndOf="@+id/imgViewRollo001" android:layout_marginTop="16dp"
-                    app:layout_constraintTop_toBottomOf="@+id/txtViewRollo001"/>
+                    android:id="@+id/imgBtAthelstan" app:layout_constraintStart_toStartOf="@+id/imgBtRollo"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtRollo" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtViewPersonagemNome"/>
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@mipmap/bjorn"
+                    android:id="@+id/imgBtBjorn"
+                    app:layout_constraintStart_toStartOf="@+id/imgBtFloki"
+                    app:layout_constraintEnd_toEndOf="@+id/imgBtFloki" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtViewPersonagemNome"/>
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
